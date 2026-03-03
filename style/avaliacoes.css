@@ -1,0 +1,19 @@
+.avaliacoes {
+    padding: 3em 0;
+}
+
+.info-avaliacoes h1 {
+    text-align: center;
+    padding: 1em 0;
+}
+
+@media screen and (max-width: 360px) {
+    .avaliacoes {
+        padding: 1.5em 0;
+    }
+
+    .info-avaliacoes h3 {
+        font-size: 18px;
+        padding: 1em 0;
+    }
+}

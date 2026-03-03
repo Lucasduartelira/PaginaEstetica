@@ -1,0 +1,126 @@
+.servicos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 4%;
+    width: 100%;
+}
+
+.info-servicos {
+    text-align: center;
+    padding: 2em 0;
+}
+
+.info-servicos h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-align: center;
+    font-size: 32px;
+    padding: 2em 0 0 0;
+}
+
+.info-servicos h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.servicos .swiper {
+    height: auto !important;
+    min-height: unset !important;
+    padding-bottom: 1em !important;
+}
+
+.servicos .swiper-slide {
+    padding: 0;
+    overflow: hidden;
+    justify-content: flex-start;
+    height: 380px;
+    border: 1px solid #ccc;
+}
+
+.servicos .swiper-slide img {
+    width: 100%;
+    height: 150px;
+    /* define altura fixa da imagem */
+    object-fit: cover;
+}
+
+
+.swiper-slide:first-child img {
+    object-position: top center;
+}
+
+.servicos .swiper-slide h1 {
+    font-weight: 800;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.servicos .swiper-slide p {
+    margin-bottom: 0 auto;
+    padding: 0 2em;
+    line-height: 1.2;
+    font-size: 16px;
+}
+
+.botao-agendar-2 {
+    display: block;
+    /* Necessário para que a margem auto funcione */
+    justify-content: center;
+    margin: 10px auto;
+    /* 30px de espaço em cima/baixo e centralizado nas laterais */
+    /* Aproveite para melhorar o visual do seu botão */
+    padding: 10px;
+    cursor: pointer;
+    width: 280px;
+    border-radius: 8px;
+    border: solid 1px;
+    color: var(--cor-texto);
+    background-color: transparent;
+    font-size: 22px;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 360px) {
+
+    .servicos .swiper-slide img {
+        height: 130px;
+    }
+
+    .servicos .swiper-slide {
+        height: 320px;
+    }
+
+    .info-servicos {
+        text-align: center;
+        padding: 0 0 1em 0;
+    }
+
+    .info-servicos h3 {
+        font-size: 18px;
+        padding: 0.5em 0;
+    }
+
+    .servicos .swiper-slide p {
+        font-size: 14px;
+    }
+
+    .botao-agendar-2 {
+        font-size: 14px;
+        width: 180px;
+    }
+
+    .servicos .swiper {
+        height: auto !important;
+        min-height: unset !important;
+        padding-bottom: 2em !important;
+    }
+}

@@ -1,0 +1,104 @@
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 0 5rem 0;
+}
+
+.redes-sociais h1 {
+    font-weight: 300;
+    padding: 0 0 2em 0;
+    text-align: center;
+}
+
+.links-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+}
+
+.links-sociais .insta p {
+    font-size: 12px;
+    margin: auto 5em;
+}
+
+.links-sociais,
+.links-sociais * {
+    text-decoration: none !important;
+    color: inherit !important;
+    cursor: pointer;
+}
+
+.icones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px color(srgb red green blue);
+    border-radius: 6px;
+    padding: 1em;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+    width: 400px;
+    height: 250px;
+}
+
+.icones:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+.redes-sociais .links-sociais p {
+    font-size: 16px;
+    width: 100%;
+    padding: 1em;
+}
+
+.insta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+
+
+/* Mobile: até 360px */
+@media screen and (max-width: 360px) {
+
+    .links-sociais {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .redes-sociais {
+        padding: 2em 0;
+    }
+
+    .redes-sociais h1 {
+        font-size: 22px;
+        padding: 0 0 1em 0;
+    }
+
+    .icones {
+        width: 280px;
+        height: 90px;
+    }
+
+    .icones .insta img {
+        width: 40px;
+    }
+
+    .icones:hover {
+        transform: scale(1.08);
+        cursor: pointer;
+    }
+
+    .icones h3 {
+        font-size: 14px;
+        padding: 0.5em 0;
+    }
+
+}

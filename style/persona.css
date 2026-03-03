@@ -1,0 +1,57 @@
+.natalia-medeiros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 0;
+}
+
+.box-natalia {
+    display: flex;
+    justify-content:space-between;
+    padding: 2em;
+    width: 1000px;
+}
+
+.natalia-medeiros img {
+    width: 400px;
+    border-radius: 8px;
+}
+
+.info-natalia h1 {
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.info-natalia p {
+    width: 400px;
+    padding: 2em 0;
+    font-size: 18px;
+}
+
+/* Mobile: até 360px */
+@media screen and (max-width: 360px) {
+    .natalia-medeiros {
+        padding: 2em 0;
+    }
+
+    .box-natalia {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .info-natalia h1 {
+        font-size: 28px;
+    }
+
+    .info-natalia p {
+        width: 280px;
+        font-size: 14px;
+    }
+
+    .natalia-medeiros img {
+        width: 200px;
+    }
+}

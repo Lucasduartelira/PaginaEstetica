@@ -1,0 +1,79 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10em 0;
+}
+
+.banner-readline {
+  width: 100%;
+}
+
+/* Título principal */
+.banner-readline h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 1.1;
+}
+
+/* Nome */
+.banner-readline p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  padding: 1em 0 4em 0;
+  text-align: center;
+}
+
+/* Partes em destaque */
+.italic {
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.botao-agendar-1 {
+  display: block;
+  /* Necessário para que a margem auto funcione */
+  justify-content: center;
+  margin: 10px auto;
+  /* 30px de espaço em cima/baixo e centralizado nas laterais */
+  /* Aproveite para melhorar o visual do seu botão */
+  padding: 10px;
+  cursor: pointer;
+  width: 280px;
+  border-radius: 8px;
+  border: solid 1px;
+  color: var(--cor-texto);
+  background-color: transparent;
+  font-size: 22px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+}
+
+.botao-agendar-1:active {
+  transform: scale(0.96);
+}
+
+/* Mobile: até 360 px */
+@media screen and (max-width: 360px) {
+  .banner {
+    padding: 6em 0;
+  }
+  .banner .banner-readline .titulo-readline {
+    font-size: 24px;
+  }
+
+  .banner-readline p {
+    font-size: 12px;
+  }
+
+  .botao-agendar-1 {
+    font-size: 14px;
+    width: 180px;
+  }
+
+}
