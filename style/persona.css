@@ -7,14 +7,21 @@
 
 .box-natalia {
     display: flex;
-    justify-content:space-between;
-    padding: 2em;
-    width: 1000px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 3em;
+    width: 100%;
 }
 
 .natalia-medeiros img {
     width: 400px;
     border-radius: 8px;
+}
+
+.info-natalia {
+    max-width: 500px;
+    width: 100%;
 }
 
 .info-natalia h1 {
@@ -23,35 +30,41 @@
 }
 
 .info-natalia p {
-    width: 400px;
+    width: 100%;
     padding: 2em 0;
     font-size: 18px;
 }
 
 /* Mobile: até 360px */
 @media screen and (max-width: 360px) {
-    .natalia-medeiros {
-        padding: 2em 0;
-    }
 
-    .box-natalia {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        padding: 1em;
-    }
+.natalia-medeiros {
+    padding: 4em 2rem;
+}
 
-    .info-natalia h1 {
-        font-size: 28px;
-    }
+.box-natalia {
+    flex-direction: column;
+    align-items: center;   /* centraliza os elementos */
+    text-align: center;    /* centraliza o texto */
+    padding: 0;
+}
 
-    .info-natalia p {
-        width: 280px;
-        font-size: 14px;
-    }
+.info-natalia {
+    max-width: 100%;
+    text-align: start;
+}
 
-    .natalia-medeiros img {
-        width: 200px;
-    }
+.info-natalia h1 {
+    font-size: 28px;
+}
+
+.info-natalia p {
+    width: 100%;           /* remove largura fixa */
+    font-size: 14px;
+}
+
+.natalia-medeiros img {
+    width: 200px;
+}
+
 }

@@ -4,50 +4,16 @@
     padding: 0;
     /* Remove paddings que podem estar empurrando o conteúdo */
 }
-
-.galeria-atelie {
-    width: 100vw;
-    /* Força o elemento a ter a largura total da tela */
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    display: flex;
-    justify-content: center;
-}
-
 .galeria-atelie video {
-    width: 100vw;
+    width: 100%;
     /* Vídeo ocupa toda a largura */
-    height: 350px;
+    height: 400px;
     /* Mantém a proporção ou defina uma altura fixa se preferir */
     object-fit: cover;
 }
 
-.card-atelie {
-    display: flex;
-    flex-direction: column;
-    padding: 0 0 4em 0;
-}
-
-.galeria-atelie {
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    /* Força o elemento a ter a largura total da tela */
-}
-
-
-
 .info-atelie h1 {
     font-size: 48px;
-}
-
-.info-atelie h3 {
-    font-size: 24px;
-    font-weight: 100;
-    padding: 0.5em 0;
 }
 
 /* Mobile: até 360px */

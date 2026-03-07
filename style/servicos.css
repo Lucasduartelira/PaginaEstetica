@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 4%;
+    padding: 2em 4% 4em;
     width: 100%;
 }
 
@@ -14,7 +14,6 @@
 
 .info-servicos h1 {
     font-family: 'Libre Baskerville', serif;
-    font-style: italic;
     font-weight: 400;
     letter-spacing: 0.5px;
     text-align: center;
@@ -37,7 +36,7 @@
     padding: 0;
     overflow: hidden;
     justify-content: flex-start;
-    height: 380px;
+    height: 350px;
     border: 1px solid #ccc;
 }
 
@@ -91,26 +90,16 @@
 
 @media screen and (max-width: 360px) {
 
-    .servicos .swiper-slide img {
-        height: 130px;
+    .servicos {
+        padding: 0 2rem;
     }
 
-    .servicos .swiper-slide {
-        height: 320px;
-    }
-
-    .info-servicos {
-        text-align: center;
-        padding: 0 0 1em 0;
+    .info-servicos h1 {
+        font-size: 28px;
     }
 
     .info-servicos h3 {
         font-size: 18px;
-        padding: 0.5em 0;
-    }
-
-    .servicos .swiper-slide p {
-        font-size: 14px;
     }
 
     .botao-agendar-2 {
@@ -118,9 +107,4 @@
         width: 180px;
     }
 
-    .servicos .swiper {
-        height: auto !important;
-        min-height: unset !important;
-        padding-bottom: 2em !important;
-    }
 }

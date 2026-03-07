@@ -5,10 +5,6 @@
   padding: 10em 0;
 }
 
-.banner-readline {
-  width: 100%;
-}
-
 /* Título principal */
 .banner-readline h1 {
   font-family: 'Cormorant Garamond', serif;
@@ -60,10 +56,17 @@
 
 /* Mobile: até 360 px */
 @media screen and (max-width: 360px) {
+
   .banner {
-    padding: 6em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem 6rem 1rem;
+    margin: 0 auto;
   }
+  
   .banner .banner-readline .titulo-readline {
+    margin: 0 auto;
     font-size: 24px;
   }
 

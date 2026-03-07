@@ -1,11 +1,5 @@
 .vale-presente {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
   padding: 4em 0;
-  margin: 5em auto;
-  /* PERMITE QUE AS SETAS APAREÇAM FORA DA CAIXA */
 }
 
 .card-presente {
@@ -17,7 +11,14 @@
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
   padding: 2em;
   animation: flutuar 3s ease-in-out infinite;
-  border-radius: 8px;
+  border-radius: 12px;
+  margin: 0 auto;
+  background-color: aliceblue;
+}
+
+.card-presente:hover {
+  transform: scale(1.08);
+  cursor: pointer;
 }
 
 .info-presente h1 {
@@ -38,12 +39,14 @@
 .card-presente a * {
   text-decoration: none !important;
   color: inherit !important;
+  cursor: pointer;
 }
 
 /* Garante que o estado 'visitado' (roxo) seja neutralizado */
 .card-presente a:visited,
 .card-presente a:visited * {
   color: inherit !important;
+  cursor: pointer;
 }
 
 .info-presente {
@@ -92,9 +95,8 @@
 @media screen and (max-width: 360px) {
 
   .vale-presente {
-    margin: 4em 0 0 0;
+    padding: 2rem 0 0 0;
   }
-
 
   .card-presente {
     width: 280px;
@@ -109,13 +111,15 @@
     font-weight: 400;
     font-size: 21px;
   }
+
   .vale-presente .info-presente h3 {
     font-weight: 200;
-    font-size: 14px;
+    font-size: 1px;
     width: 250px;
     text-align: center;
     padding: 0.5em 0;
   }
+
   .botao-presentear {
     font-size: 12px;
   }

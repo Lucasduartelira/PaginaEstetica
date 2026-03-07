@@ -8,6 +8,7 @@
 @import url(/style/persona.css);
 @import url(/style/valepresente.css);
 @import url(/style/carrosseis.css);
+@import url(/style/footer.css);
 
 * {
     margin: 0;
@@ -15,6 +16,27 @@
     box-sizing: border-box;
     font-weight: 200;
 }
+
+.section {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.container-bn {max-width: 1200px;}
+.container-av {max-width: 1200px;}
+.container-sv {max-width: 1200px;}
+.container-ps {max-width: 1200px;}
+.container-vp {max-width: 1200px;}
+.container-sc {max-width: 1200px;}
+.container-gm {max-width: 1000px;}
+.container-ft {max-width: 1000px;}
+
+
 
 :root {
     --cor-fundo: rgba(245, 242, 235, 1);
@@ -31,6 +53,7 @@ body {
 
     background-size: cover;
 }
+
 
 /* dinamica com javascript */
 
@@ -73,11 +96,6 @@ body {
 .info-sociais {
     opacity: 0;
     filter: blur(8px);
-    transition: all 2s;
-    transform: translateY(30px);
-}
-
-.links-sociais {
     transition: all 2s;
     transform: translateY(30px);
 }

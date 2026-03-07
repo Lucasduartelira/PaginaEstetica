@@ -1,0 +1,22 @@
+.footer {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+    padding: 2rem 0;
+}
+
+.info-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 6rem;
+    gap: 32px;
+    text-align: center;
+}
+
+.info-footer img {
+    border-radius: 12px;
+    width: 140px;
+}
+
+
+

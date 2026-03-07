@@ -5,6 +5,11 @@
   padding: 1em 1em;
 }
 
+.sobrenome {
+  margin-left: 20px;
+  /* espaço entre os nomes */
+}
+
 /* Mobile: até 768px */
 @media screen and (max-width: 360px) {
   .menu .marca {

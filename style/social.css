@@ -1,8 +1,64 @@
+.background-cards{
+    position: relative;
+    overflow: hidden;
+}
+
+/* video de fundo */
+
+.video-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: -1;
+}
+
+/* conteúdo por cima */
+
+.redes-sociais .container{
+    position: relative;
+    z-index: 2;
+}
+
+
+
 .redes-sociais {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 0 0 5rem 0;
+    padding: 4em 0 8em 0;
+    width: 100%;
+}
+
+.insta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 800px;
+    height: 250px;
+
+    margin: 0 auto;
+
+    background: rgba(255, 255, 255, 0.055);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    border-radius: 12px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+
+}
+
+.icons-sociais {
+    padding: 0;
 }
 
 .redes-sociais h1 {
@@ -11,67 +67,44 @@
     text-align: center;
 }
 
-.links-sociais {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    align-items: center;
+.insta h2 {
+    text-align: center;
+    font-weight: 800;
+}
+
+.insta p {
+    font-size: 18px;
     width: 100%;
 }
 
-.links-sociais .insta p {
-    font-size: 12px;
-    margin: auto 5em;
-}
-
-.links-sociais,
-.links-sociais * {
+.insta,
+.insta * {
     text-decoration: none !important;
     color: inherit !important;
     cursor: pointer;
 }
 
-.icones {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid 1px color(srgb red green blue);
-    border-radius: 6px;
-    padding: 1em;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
-    width: 400px;
-    height: 250px;
-}
-
-.icones:hover {
+.insta:hover {
     transform: scale(1.08);
     cursor: pointer;
 }
 
-.redes-sociais .links-sociais p {
-    font-size: 16px;
-    width: 100%;
-    padding: 1em;
+.icons-sociais {
+    display: block;
+    margin: 0 auto;
+    /* Centraliza automaticamente a imagem dentro de qualquer bloco */
+
 }
 
-.insta {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
+.letterinstagram {
+    display: block;
+    margin: 0 auto;
 }
-
 
 
 
 /* Mobile: até 360px */
 @media screen and (max-width: 360px) {
-
-    .links-sociais {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
 
     .redes-sociais {
         padding: 2em 0;
@@ -82,13 +115,21 @@
         padding: 0 0 1em 0;
     }
 
-    .icones {
-        width: 280px;
-        height: 90px;
+    .redes-sociais p {
+        text-align: center;
+        font-size: 14px;
     }
 
-    .icones .insta img {
-        width: 40px;
+    .insta {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 280px;
+        background: transparent;
+    }
+
+    .insta img {
+        width: 80px;
     }
 
     .icones:hover {
