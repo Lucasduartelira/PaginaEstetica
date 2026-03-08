@@ -1,14 +1,15 @@
-@import url(style/menu.css);
-@import url(style/banner.css);
-@import url(style/atelie.css);
-@import url(style/servicos.css);
-@import url(style/maps.css);
-@import url(style/avaliacoes.css);
-@import url(style/social.css);
-@import url(style/persona.css);
-@import url(style/valepresente.css);
-@import url(style/carrosseis.css);
-@import url(style/footer.css);
+/* Importando os arquivos de estilo */
+@import url('atelie.css');
+@import url('avaliacoes.css');
+@import url('banner.css');
+@import url('carrosseis.css');
+@import url('footer.css');
+@import url('maps.css');
+@import url('menu.css');
+@import url('persona.css');
+@import url('servicos.css');
+@import url('social.css');
+@import url('valepresente.css');
 
 * {
     margin: 0;
