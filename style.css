@@ -1,15 +1,14 @@
-/* Importando os arquivos de estilo */
-@import url('atelie.css');
-@import url('avaliacoes.css');
-@import url('banner.css');
-@import url('carrosseis.css');
-@import url('footer.css');
-@import url('maps.css');
-@import url('menu.css');
-@import url('persona.css');
-@import url('servicos.css');
-@import url('social.css');
-@import url('valepresente.css');
+@import url(style/menu.css);
+@import url(style/banner.css);
+@import url(style/atelie.css);
+@import url(style/servicos.css);
+@import url(style/maps.css);
+@import url(style/avaliacoes.css);
+@import url(style/social.css);
+@import url(style/persona.css);
+@import url(style/valepresente.css);
+@import url(style/carrosseis.css);
+@import url(style/footer.css);
 
 * {
     margin: 0;
@@ -36,6 +35,33 @@
 .container-sc {max-width: 1200px;}
 .container-gm {max-width: 1000px;}
 .container-ft {max-width: 1000px;}
+
+/* --- PROTOCOLO DE ADAPTAÇÃO MOBILE REAL (320px - 480px) --- */
+@media (max-width: 360px) {
+    /* Força os containers a respeitarem a margem mínima de segurança */
+    .container, .container-bn, .container-av, .container-sv, 
+    .container-ps, .container-vp, .container-sc, 
+    .container-gm, .container-ft {
+        max-width: 95% !important; /* Mais espaço para o conteúdo no celular */
+        padding: 0.5rem !important;
+    }
+
+    /* Redução de fontes para evitar quebra de linha agressiva */
+    h1, .info-maps {
+        font-size: 1.5rem !important;
+    }
+
+    /* O pesadelo do mobile: Iframe e elementos externos */
+    iframe, .mapa, .swiper {
+        width: 100% !important;
+        height: 250px !important; /* Altura controlada para não ocupar a tela toda */
+    }
+
+    /* Ajuste de margens internas para o fluxo não ficar apertado */
+    section {
+        padding: 20px 0 !important;
+    }
+}
 
 
 
