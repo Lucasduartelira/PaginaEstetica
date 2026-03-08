@@ -1,14 +1,14 @@
-@import url(/style/menu.css);
-@import url(/style/banner.css);
-@import url(/style/atelie.css);
-@import url(/style/servicos.css);
-@import url(/style/maps.css);
-@import url(/style/avaliacoes.css);
-@import url(/style/social.css);
-@import url(/style/persona.css);
-@import url(/style/valepresente.css);
-@import url(/style/carrosseis.css);
-@import url(/style/footer.css);
+@import url(style/menu.css);
+@import url(style/banner.css);
+@import url(style/atelie.css);
+@import url(style/servicos.css);
+@import url(style/maps.css);
+@import url(style/avaliacoes.css);
+@import url(style/social.css);
+@import url(style/persona.css);
+@import url(style/valepresente.css);
+@import url(style/carrosseis.css);
+@import url(style/footer.css);
 
 * {
     margin: 0;
