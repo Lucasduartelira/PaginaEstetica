@@ -1,9 +1,12 @@
 .grid-atelie {
-    width: 100%;
     /* Garante que a seção tente ocupar tudo */
     padding: 0;
     /* Remove paddings que podem estar empurrando o conteúdo */
 }
+.galeria-atelie {
+    width:100%;
+}
+
 .galeria-atelie video {
     width: 100%;
     /* Vídeo ocupa toda a largura */
@@ -15,6 +18,7 @@
 .info-atelie h1 {
     font-size: 48px;
 }
+
 
 /* Mobile: até 360px */
 @media screen and (max-width: 360px) {

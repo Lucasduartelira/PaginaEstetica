@@ -1,6 +1,7 @@
 .background-cards{
     position: relative;
     overflow: hidden;
+    padding: 4rem 0;
 }
 
 /* video de fundo */
@@ -76,12 +77,12 @@
 .insta p {
     font-size: 18px;
     width: 100%;
+    color: #ffff;
 }
 
 .insta,
 .insta * {
-    text-decoration: none !important;
-    color: inherit !important;
+    text-decoration: none ;
     cursor: pointer;
 }
 
@@ -125,8 +126,8 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        width: 280px;
         background: transparent;
+        width: 100%;
     }
 
     .insta img {

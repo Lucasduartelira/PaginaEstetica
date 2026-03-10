@@ -43,6 +43,8 @@
 }
 
 .box-natalia {
+    display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;   /* centraliza os elementos */
     text-align: center;    /* centraliza o texto */
