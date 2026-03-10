@@ -17,24 +17,17 @@
     font-weight: 200;
 }
 
-.section {
-    width: 100%;
-}
-
+/* Classe base para centralizar conteúdo */
 .container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 2rem 0;
+    width: 100%;             /* Ocupa 90% da tela no mobile */
+    max-width: 1200px;      /* Limita a largura em telas grandes */
+    margin: 0 auto;         /* Centraliza o container */
 }
 
-.container-bn {max-width: 1200px;}
-.container-av {max-width: 1200px;}
-.container-sv {max-width: 1200px;}
-.container-ps {max-width: 1200px;}
-.container-vp {max-width: 1200px;}
-.container-sc {max-width: 1200px;}
-.container-gm {max-width: 1200px;}
-.container-ft {max-width: 1200px;}
+/* Espaçamento padrão para todas as seções */
+section {
+    padding: 60px 0;        /* Espaçamento superior e inferior uniforme */
+}
 
 /* --- PROTOCOLO DE ADAPTAÇÃO MOBILE REAL (320px - 480px) --- */
 @media (max-width: 360px) {

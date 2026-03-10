@@ -38,47 +38,18 @@
 /* Mobile: até 360px */
 @media screen and (max-width: 360px) {
 
-    .natalia-medeiros {
-        padding: 4em 2rem;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        /* centraliza os elementos */
-        text-align: center;
-        /* centraliza o texto */
-        padding: 0;
-    }
-
     .box-natalia {
         display: flex;
-        justify-content: center;
-        flex-direction: column;
+        flex-wrap: wrap;
+        /* Isso faz o conteúdo pular para baixo no mobile */
+        gap: 30px;
         align-items: center;
-        /* centraliza os elementos */
-        text-align: center;
-        /* centraliza o texto */
-        padding: 0;
     }
 
-    .info-natalia {
-        max-width: 100%;
-        text-align: start;
-        padding: 0 1.5rem;
-    }
-
-    .info-natalia h1 {
-        font-size: 28px;
-    }
-
-    .info-natalia p {
-        width: 100%;
-        /* remove largura fixa */
-        font-size: 14px;
-    }
-
-    .natalia-medeiros img {
-        width: 200px;
+    .box-natalia>div,
+    .box-natalia>img {
+        flex: 1 1 300px;
+        /* Cada item ocupa pelo menos 300px, se não couber, pula linha */
     }
 
 }
