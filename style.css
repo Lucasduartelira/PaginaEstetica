@@ -19,41 +19,9 @@
 
 /* Classe base para centralizar conteúdo */
 .container {
-    width: 100%;             /* Ocupa 90% da tela no mobile */
+    width: 90%;             /* Ocupa 90% da tela no mobile */
     max-width: 1200px;      /* Limita a largura em telas grandes */
     margin: 0 auto;         /* Centraliza o container */
-}
-
-/* Espaçamento padrão para todas as seções */
-section {
-    padding: 60px 0;        /* Espaçamento superior e inferior uniforme */
-}
-
-/* --- PROTOCOLO DE ADAPTAÇÃO MOBILE REAL (320px - 480px) --- */
-@media (max-width: 360px) {
-    /* Força os containers a respeitarem a margem mínima de segurança */
-    .container, .container-bn, .container-av, .container-sv, 
-    .container-ps, .container-vp, .container-sc, 
-    .container-gm, .container-ft {
-        max-width: 95% !important; /* Mais espaço para o conteúdo no celular */
-        padding: 0.5rem !important;
-    }
-
-    /* Redução de fontes para evitar quebra de linha agressiva */
-    h1, .info-maps {
-        font-size: 1.5rem !important;
-    }
-
-    /* O pesadelo do mobile: Iframe e elementos externos */
-    iframe, .mapa, .swiper {
-        width: 100% !important;
-        height: 250px !important; /* Altura controlada para não ocupar a tela toda */
-    }
-
-    /* Ajuste de margens internas para o fluxo não ficar apertado */
-    section {
-        padding: 20px 0 !important;
-    }
 }
 
 
@@ -74,10 +42,9 @@ body {
     background-size: cover;
 }
 
-
 /* dinamica com javascript */
 
-.banner-readline {
+.titulo-readline {
     opacity: 0;
     filter: blur(15px);
     transition: all 2s;

@@ -2,17 +2,16 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 1em 1em;
+  padding: 2em 1em;
 }
 
-.sobrenome {
-  margin-left: 20px;
-  /* espaço entre os nomes */
+.marca {
+  font-size: 32px;
 }
 
-/* Mobile: até 768px */
-@media screen and (max-width: 360px) {
-  .menu .marca {
+/* Mobile: até 360px */
+@media screen and (max-width: 1020px) {
+  .marca {
     font-size: 18px;
   }
 }

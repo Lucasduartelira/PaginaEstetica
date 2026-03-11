@@ -15,27 +15,13 @@
     object-fit: cover;
 }
 
-.info-atelie h1 {
-    font-size: 48px;
-}
-
 
 /* Mobile: até 360px */
-@media screen and (max-width: 360px) {
-    .info-atelie h1 {
-        font-size: 24px;
-    }
-
-    .info-atelie h3 {
-        font-size: 16px;
-    }
+@media screen and (max-width: 1020px) {
 
     .galeria-atelie video {
         width: 100vw;
-        /* Vídeo ocupa toda a largura */
-        height: 250px;
-        /* Mantém a proporção ou defina uma altura fixa se preferir */
-        object-fit: cover;
+        height: 150px;
     }
 
 }

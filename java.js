@@ -9,14 +9,14 @@ const observer = new IntersectionObserver((entries) => {
   })
 })
 
-const elements = document.querySelectorAll('.info-atelie, .banner-readline, .info-servicos, .box-avaliacoes, .info-avaliacoes, .botao-agendar-1, .testimonials, .info-sociais, .info-maps')
+const elements = document.querySelectorAll('.titulo-readline, .botao-agendar-1, .info-atelie, .info-servicos, .box-avaliacoes, .info-avaliacoes, .testimonials, .info-sociais, .info-maps')
 
 elements.forEach((element) => observer.observe(element))
 
 
 var swiper = new Swiper(".swiper", {
   grabCursor: true,
-  loop: false,
+  loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

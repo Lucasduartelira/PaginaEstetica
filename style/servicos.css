@@ -3,8 +3,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 2em 4% 4em;
-    width: 100%;
+    padding: 4rem 0;
+}
+
+.swiper-wrapper {
+    height: auto;
 }
 
 .info-servicos {
@@ -27,22 +30,21 @@
 }
 
 .servicos .swiper {
-    height: auto !important;
-    min-height: unset !important;
-    padding-bottom: 1em !important;
+    height: auto;
+    min-height: unset;
+    padding-bottom: 2rem;
 }
 
 .servicos .swiper-slide {
     padding: 0;
     overflow: hidden;
     justify-content: flex-start;
-    height: 350px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccc;
 }
 
 .servicos .swiper-slide img {
     width: 100%;
-    height: 150px;
+    height: 40%;
     /* define altura fixa da imagem */
     object-fit: cover;
 }
@@ -63,7 +65,7 @@
 
 .servicos .swiper-slide p {
     margin-bottom: 0 auto;
-    padding: 0 2em;
+    padding: 2rem;
     line-height: 1.2;
     font-size: 16px;
 }
@@ -75,9 +77,9 @@
     margin: 10px auto;
     /* 30px de espaço em cima/baixo e centralizado nas laterais */
     /* Aproveite para melhorar o visual do seu botão */
-    padding: 10px;
+    padding: 16px;
     cursor: pointer;
-    width: 280px;
+    width: 50%;
     border-radius: 8px;
     border: solid 1px;
     color: var(--cor-texto);
@@ -86,25 +88,36 @@
     text-decoration: none;
     text-align: center;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+
 }
 
-@media screen and (max-width: 360px) {
+.botao-agendar-2:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
 
-    .servicos {
-        padding: 0 2rem;
-    }
-
-    .info-servicos h1 {
-        font-size: 28px;
+@media screen and (max-width: 1020px) {
+    .info-servicos {
+        padding: 4rem 0 3rem 0;
     }
 
     .info-servicos h3 {
-        font-size: 18px;
+        font-size: 24px;
+        padding: 1rem 0 0.5rem 0;
+    }
+
+    .servicos .swiper-slide img {
+        height: 40%;
+    }
+
+    .servicos .swiper-slide p {
+        font-size: 14px;
     }
 
     .botao-agendar-2 {
-        font-size: 14px;
-        width: 180px;
+        width: 70%;
+        padding: 14px;
+        font-size: 16px;
     }
 
 }

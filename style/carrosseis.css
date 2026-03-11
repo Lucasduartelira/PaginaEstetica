@@ -30,3 +30,7 @@
 .swiper-button-prev {
   left: 3px;
 }
+
+@media screen and (max-width: 1020px) {
+  
+}

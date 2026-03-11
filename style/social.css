@@ -42,7 +42,7 @@
     align-items: center;
     flex-direction: column;
 
-    width: 800px;
+    width: 70%;
     height: 250px;
 
     margin: 0 auto;
@@ -106,7 +106,7 @@
 
 
 /* Mobile: até 360px */
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 1020px) {
 
     .redes-sociais {
         padding: 2em 0;
@@ -127,11 +127,16 @@
         justify-content: center;
         flex-direction: column;
         background: transparent;
-        width: 100%;
+        width: 90%;
+    }
+
+    .insta p {
+        font-size: 14px;
+        padding: 0 0.5rem;
     }
 
     .insta img {
-        width: 80px;
+        width: 30%;
     }
 
     .icones:hover {

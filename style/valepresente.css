@@ -7,7 +7,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 600px;
+  width: 70%;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
   padding: 2em;
   animation: flutuar 3s ease-in-out infinite;
@@ -92,19 +92,19 @@
 
 
 /* Mobile: até 360px */
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 1020px) {
 
   .vale-presente {
     padding: 2rem 0 0 0;
   }
 
   .card-presente {
-    width: 280px;
     border-radius: 8px;
+    width: 90%;
   }
 
   .imagem-presente {
-    width: 150px;
+    width: 50%;
   }
 
   .info-presente h1 {

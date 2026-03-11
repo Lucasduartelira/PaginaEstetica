@@ -13,10 +13,7 @@
     font-weight: 300;
 }
 
-.localizacao {
-    width: 100%;
-    padding: 2rem;
-}
+
 
 .mapa {
     position: relative;
@@ -34,14 +31,10 @@
 
 
 /* Mobile: até 360px */
-@media screen and (max-width: 360px) {
-    .google-maps h1 {
-        text-align: center;
-        font-size: 24px;
-    }
+@media screen and (max-width: 1020px) {
+
 
     .google-maps .mapa {
-        height: 180px;
         width: 100%;
         margin: 0 auto;
     }
