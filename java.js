@@ -9,7 +9,7 @@ const observer = new IntersectionObserver((entries) => {
   })
 })
 
-const elements = document.querySelectorAll('.titulo-readline, .botao-agendar-1, .info-atelie, .info-servicos, .box-avaliacoes, .info-avaliacoes, .testimonials, .info-sociais, .info-maps')
+const elements = document.querySelectorAll('.titulo-readline, .botao-agendar-1, .info-atelie, .info-servicos, .box-avaliacoes, .info-avaliacoes, .testimonials, .info-maps')
 
 elements.forEach((element) => observer.observe(element))
 

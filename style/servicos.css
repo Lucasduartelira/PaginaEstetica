@@ -20,8 +20,8 @@
     font-weight: 400;
     letter-spacing: 0.5px;
     text-align: center;
-    font-size: 32px;
     padding: 2em 0 0 0;
+    font-size: 48px;
 }
 
 .info-servicos h3 {
@@ -32,7 +32,7 @@
 .servicos .swiper {
     height: auto;
     min-height: unset;
-    padding-bottom: 2rem;
+    padding: 1rem;
 }
 
 .servicos .swiper-slide {
@@ -98,11 +98,15 @@
 
 @media screen and (max-width: 1020px) {
     .info-servicos {
-        padding: 4rem 0 3rem 0;
+        padding: 1rem;
+    }
+
+    .info-servicos h1 {
+        font-size: 32px;
     }
 
     .info-servicos h3 {
-        font-size: 24px;
+        font-size: 18px;
         padding: 1rem 0 0.5rem 0;
     }
 

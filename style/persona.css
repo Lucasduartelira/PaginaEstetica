@@ -12,7 +12,7 @@
 .info-natalia {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 0;
+    padding: 1rem 0;
 
 }
 
@@ -42,6 +42,7 @@
 
     .box-natalia h1 {
         font-size: 32px;
+        width: 100%;
     }
 
     .natalia-medeiros img {
