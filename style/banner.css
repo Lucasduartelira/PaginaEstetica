@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   padding: 6rem 0;
-  min-height: 70vh; /* Ocupa 70% da altura da visão do usuário */
+  min-height: 100vh; /* Ocupa 70% da altura da visão do usuário */
 }
 
 .banner {
