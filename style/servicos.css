@@ -6,10 +6,6 @@
     padding: 4rem 0;
 }
 
-.swiper-wrapper {
-    height: auto;
-}
-
 .info-servicos {
     text-align: center;
     padding: 2em 0;
@@ -24,7 +20,7 @@
     font-size: 48px;
 }
 
-.info-servicos h3 {
+.info-servicos h2 {
     font-size: 24px;
     font-weight: 600;
 }
@@ -40,6 +36,7 @@
     overflow: hidden;
     justify-content: flex-start;
     border: 1px solid #cccc;
+
 }
 
 .servicos .swiper-slide img {
@@ -54,7 +51,7 @@
     object-position: top center;
 }
 
-.servicos .swiper-slide h1 {
+.servicos .swiper-slide h3 {
     font-weight: 800;
     font-family: 'Libre Baskerville', serif;
     font-style: italic;
@@ -65,7 +62,7 @@
 
 .servicos .swiper-slide p {
     margin-bottom: 0 auto;
-    padding: 2rem;
+    padding: 1rem;
     line-height: 1.2;
     font-size: 16px;
 }
@@ -105,9 +102,9 @@
         font-size: 32px;
     }
 
-    .info-servicos h3 {
+    .info-servicos h2 {
         font-size: 18px;
-        padding: 1rem 0 0.5rem 0;
+        padding: 1rem 0 1rem 0;
     }
 
     .servicos .swiper-slide img {

@@ -1,24 +1,3 @@
-.background-cards{
-    position: relative;
-    overflow: hidden;
-    padding: 4rem 0;
-}
-
-/* video de fundo */
-
-.video-bg{
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    z-index: -1;
-}
-
 .redes-sociais {
     display: flex;
     justify-content: center;
@@ -27,14 +6,16 @@
     width: 100%;
 }
 
-.insta {
+.rede-insta {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    display: block;
+    /* Garante que o link ocupe toda a área do card */
 
     width: 70%;
-    height: 350px;
+    height: auto;
 
     margin: 0 auto;
 
@@ -46,7 +27,16 @@
     border-radius: 12px;
 
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    text-decoration: none;
+}
 
+.info-insta {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: var(--cor-texto-white);
 }
 
 .icons-sociais {
@@ -55,26 +45,13 @@
 
 .redes-sociais h1 {
     font-weight: 300;
-    padding: 0 0 2em 0;
     text-align: center;
-    color: #ffff;
-}
-
-.insta h2 {
-    text-align: center;
-    font-weight: 800;
+    font-size: 42px;
 }
 
 .insta p {
     font-size: 18px;
-    width: 100%;
-    color: #ffff;
-}
-
-.insta,
-.insta * {
-    text-decoration: none ;
-    cursor: pointer;
+    text-align: center;
 }
 
 .insta:hover {
@@ -85,8 +62,6 @@
 .icons-sociais {
     display: block;
     margin: 0 auto;
-    /* Centraliza automaticamente a imagem dentro de qualquer bloco */
-
 }
 
 .letterinstagram {
@@ -95,49 +70,34 @@
 }
 
 
-
 /* Mobile: até 360px */
 @media screen and (max-width: 1020px) {
 
-    .redes-sociais {
-        padding: 2em 0;
-    }
-
-    .redes-sociais h1 {
-        font-size: 22px;
-        padding: 0 0 1em 0;
-    }
-
-    .redes-sociais p {
-        text-align: center;
-        font-size: 14px;
-    }
-
-    .insta {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        background: transparent;
+    .rede-insta {
         width: 90%;
+        height: auto;
+        padding: 2rem;
     }
 
-    .insta p {
+    .info-insta {
+        text-align: center;
+        gap: 20px;
+    }
+
+    .rede-insta h1 {
+        font-size: 36px;
+    }
+
+    .redes-sociais .info-insta h2 {
         font-size: 14px;
-        padding: 0 0.5rem;
     }
 
-    .insta img {
+    .letterinstagram {
+        width: 70%;
+    }
+
+    .icons-sociais {
         width: 30%;
-    }
-
-    .icones:hover {
-        transform: scale(1.08);
-        cursor: pointer;
-    }
-
-    .icones h3 {
-        font-size: 14px;
-        padding: 0.5em 0;
     }
 
 }

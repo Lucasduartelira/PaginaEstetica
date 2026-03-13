@@ -14,8 +14,9 @@
 .titulo-readline {
   width: 100%;
   text-align: center;
-  padding: 6rem 0;
-  font-size: 56px;
+  padding: 4rem 0;
+  font-size: 62px;
+  grid-area: ;
 }
 
 /* Partes em destaque */

@@ -2,18 +2,29 @@
   padding: 4em 0;
 }
 
-.card-presente {
+.rede-presente {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+  display: block;
+  /* Garante que o link ocupe toda a área do card */
+
   width: 70%;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
-  padding: 2em;
-  animation: flutuar 3s ease-in-out infinite;
-  border-radius: 12px;
+  height: auto;
+
   margin: 0 auto;
-  background-color: aliceblue;
+
+  background: rgba(255, 255, 255, 0.055);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  border-radius: 12px;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  text-decoration: none;
 }
 
 .card-presente:hover {
@@ -23,30 +34,12 @@
 
 .info-presente h1 {
   font-weight: 400;
-  font-size: 36px;
+  font-size: 42px;
 }
 
-.vale-presente .info-presente h3 {
-  font-weight: 600;
-  width: 100%;
-  font-size: 21px;
-  padding: 0.5em 2em;
+.vale-presente .info-presente h2 {
+  font-size: 24px;
   text-align: center;
-}
-
-/* Isso remove a cor azul/roxa de QUALQUER texto dentro do link do card */
-.card-presente a,
-.card-presente a * {
-  text-decoration: none !important;
-  color: inherit !important;
-  cursor: pointer;
-}
-
-/* Garante que o estado 'visitado' (roxo) seja neutralizado */
-.card-presente a:visited,
-.card-presente a:visited * {
-  color: inherit !important;
-  cursor: pointer;
 }
 
 .info-presente {
@@ -54,10 +47,11 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  color: var(--cor-texto-white);
 }
 
 .imagem-presente {
-  width: 280px;
+  width: 30%;
 }
 
 .botao-presentear {
@@ -93,35 +87,31 @@
 
 /* Mobile: até 360px */
 @media screen and (max-width: 1020px) {
-
-  .vale-presente {
-    padding: 2rem 0 0 0;
+  .rede-presente {
+    width: 90%;
+    height: auto;
+    padding: 2rem;
   }
 
-  .card-presente {
-    border-radius: 8px;
-    width: 90%;
+  .info-presente {
+    text-align: center;
+    gap: 20px;
+  }
+
+  .vale-presente .info-presente h1 {
+    font-size: 36px;
+  }
+
+  .vale-presente .info-presente h2 {
+    font-size: 14px;
+  }
+
+  .vale-presente .info-presente p {
+    font-size: 14px;
   }
 
   .imagem-presente {
     width: 50%;
-  }
-
-  .info-presente h1 {
-    font-weight: 400;
-    font-size: 21px;
-  }
-
-  .vale-presente .info-presente h3 {
-    font-weight: 200;
-    font-size: 1px;
-    width: 250px;
-    text-align: center;
-    padding: 0.5em 0;
-  }
-
-  .botao-presentear {
-    font-size: 12px;
   }
 
 }
