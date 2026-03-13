@@ -48,6 +48,7 @@
   flex-direction: column;
   align-items: center;
   color: var(--cor-texto-white);
+  gap: 20px;
 }
 
 .imagem-presente {
@@ -90,7 +91,7 @@
   .rede-presente {
     width: 90%;
     height: auto;
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .info-presente {

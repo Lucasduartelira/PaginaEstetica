@@ -1,14 +1,9 @@
 .banner {
   display: flex;
   align-items: center;
-  padding: 6rem 0;
-  min-height: 100vh; /* Ocupa 70% da altura da visão do usuário */
-}
-
-.banner {
-  display: flex;
   flex-direction: column;
-  align-items: center;
+  min-height: 100vh; /* Ocupa 70% da altura da visão do usuário */
+  padding: 4rem 0;
 }
 
 .titulo-readline {
@@ -16,7 +11,7 @@
   text-align: center;
   padding: 4rem 0;
   font-size: 62px;
-  grid-area: ;
+
 }
 
 /* Partes em destaque */

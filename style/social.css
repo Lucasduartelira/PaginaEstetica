@@ -37,10 +37,7 @@
     flex-direction: column;
     align-items: center;
     color: var(--cor-texto-white);
-}
-
-.icons-sociais {
-    padding: 0;
+    gap: 20px;
 }
 
 .redes-sociais h1 {
@@ -62,12 +59,16 @@
 .icons-sociais {
     display: block;
     margin: 0 auto;
+    width: 20%;
 }
 
 .letterinstagram {
     display: block;
     margin: 0 auto;
+    width: 250px;
 }
+
+
 
 
 /* Mobile: até 360px */
@@ -93,7 +94,7 @@
     }
 
     .letterinstagram {
-        width: 70%;
+        width: 50%;
     }
 
     .icons-sociais {
