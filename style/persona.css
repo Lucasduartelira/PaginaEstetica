@@ -37,7 +37,7 @@
     .info-natalia {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 40px;
     }
 
     .box-natalia h1 {
@@ -51,7 +51,7 @@
 
     .info-natalia p {
     width: 100%;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 }

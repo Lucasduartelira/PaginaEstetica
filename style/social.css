@@ -2,17 +2,15 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 4em 0 8em 0;
+    padding: 4em 0 4em 0;
     width: 100%;
 }
 
 .rede-insta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     display: block;
     /* Garante que o link ocupe toda a área do card */
+    position: relative;
+
 
     width: 70%;
     height: auto;
@@ -29,6 +27,11 @@
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
     padding: 2rem;
     text-decoration: none;
+}
+
+.rede-insta:hover {
+    transform: scale(1.02);
+    cursor: pointer;
 }
 
 .info-insta {
@@ -51,11 +54,6 @@
     text-align: center;
 }
 
-.insta:hover {
-    transform: scale(1.08);
-    cursor: pointer;
-}
-
 .icons-sociais {
     display: block;
     margin: 0 auto;
@@ -68,6 +66,21 @@
     width: 250px;
 }
 
+
+@keyframes flutuarInfinito {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+        /* Sobe 15px */
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
 
 
 

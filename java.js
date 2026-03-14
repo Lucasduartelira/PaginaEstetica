@@ -17,7 +17,7 @@ elements.forEach((element) => observer.observe(element))
 var swiper = new Swiper(".swiper", {
   // CONFIGURAÇÃO PARA MOBILE (0px até 639px)
   slidesPerView: 1,       // Garante que APENAS 1 card apareça por vez
-  spaceBetween: 0,        // Tira o espaço entre os cards para eles não "vazarem"
+  spaceBetween: 5,        // espaço entre os cards
   centeredSlides: true,   // Mantém o card perfeitamente no centro
   grabCursor: true,
   loop: false,

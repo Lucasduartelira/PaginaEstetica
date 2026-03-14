@@ -1,12 +1,12 @@
 .vale-presente {
-  padding: 4em 0;
-}
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4em 0 4em 0;
+    width: 100%;
+  }
 
 .rede-presente {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   display: block;
   /* Garante que o link ocupe toda a área do card */
 
@@ -27,9 +27,18 @@
   text-decoration: none;
 }
 
-.card-presente:hover {
-  transform: scale(1.08);
+.rede-presente:hover {
+  transform: scale(1.02);
   cursor: pointer;
+}
+
+.info-presente {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: var(--cor-texto-white);
+  gap: 20px;
 }
 
 .info-presente h1 {
@@ -42,14 +51,6 @@
   text-align: center;
 }
 
-.info-presente {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  color: var(--cor-texto-white);
-  gap: 20px;
-}
 
 .imagem-presente {
   width: 30%;
@@ -70,20 +71,24 @@
   color: var(--cor-texto);
 }
 
-@keyframes flutuar {
+/* Definição do movimento infinito */
+@keyframes flutuarInfinito {
   0% {
     transform: translateY(0);
   }
 
   50% {
-    transform: translateY(-30px);
-    /* Sobe 30 pixels */
+    transform: translateY(-15px);
+    /* Sobe 15px */
   }
 
   100% {
     transform: translateY(0);
   }
 }
+
+
+
 
 
 /* Mobile: até 360px */

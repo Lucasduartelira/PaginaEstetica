@@ -130,3 +130,7 @@ body {
     filter: blur(0);
     transform: translateX(0);
 }
+
+.rede-presente, .rede-insta {
+    animation: flutuarInfinito 3s ease-in-out infinite;
+}

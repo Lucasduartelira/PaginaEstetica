@@ -1,15 +1,15 @@
 .banner {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   min-height: 100vh;
- 
 }
 
-.titulo-readline {
+.banner h1 {
   width: 100%;
   text-align: center;
-  padding: 6rem 0;
+  padding: 0 0 6rem 0;
   font-size: 62px;
 
 }
@@ -42,6 +42,8 @@
 .botao-agendar-1:hover {
   transform: scale(1.03);
   cursor: pointer;
+  transform: translateY(-10px); /* Sobe o card 10 pixéis */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Aumenta e suaviza a sombra */
 }
 
 /* Mobile: até 1020 px */
@@ -49,10 +51,11 @@
 
   .banner {
     width: 100%;
+    min-height: 90vh;
   }
 
   .banner h1 {
-    font-size: 32px;
+    font-size: 36px;
   }
 
   .botao-agendar-1 {
